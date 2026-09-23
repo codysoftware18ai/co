@@ -91,13 +91,7 @@
   }
   .nav{ display:flex; align-items:center; justify-content:space-between; padding:16px 24px; max-width:var(--maxw); margin:0 auto;}
   .logo{ display:flex; align-items:center; gap:12px; }
-  .logo-icon{
-    width:42px; height:42px; border-radius:12px;
-    background:linear-gradient(135deg,var(--blue),var(--purple));
-    display:flex; align-items:center; justify-content:center;
-    box-shadow:0 0 18px rgba(37,99,235,.5);
-  }
-  .logo-icon svg{width:24px; height:24px;}
+  .logo img{ height:38px; width:auto; display:block; }
   .logo-name{font-size:19px; font-weight:900;}
   .logo-name span{color:var(--blue-light);}
   .nav-links{ display:flex; align-items:center; gap:30px; }
@@ -357,18 +351,17 @@
 
 <header>
   <div class="nav">
-    <div class="logo">
-      <div class="logo-icon">
-        <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="8" width="16" height="12" rx="4" fill="white"/><rect x="9" y="12" width="2.4" height="2.4" rx="1" fill="#2563EB"/><rect x="12.6" y="12" width="2.4" height="2.4" rx="1" fill="#2563EB"/><rect x="10.7" y="3" width="2.6" height="5" rx="1.3" fill="white"/><circle cx="12" cy="3" r="1.6" fill="#22C55E"/></svg>
-      </div>
-      <div class="logo-name">KODY <span>ACADEMY</span></div>
-    </div>
+    <a class="logo" href="index.html">
+      <img src="assets/logo.png" alt="KODY Academy">
+    </a>
     <nav class="nav-links">
       <a href="#programs">البرامج</a>
+      <a href="#tracks">المسارات التخصصية</a>
       <a href="#ages">الفئات العمرية</a>
       <a href="#pricing">الأسعار والباقات</a>
       <a href="#b2b">للمؤسسات</a>
-      <a href="#faq">الأسئلة الشائعة</a>
+      <a href="lessons.html">الدروس</a>
+      <a href="students.html">صفحة الطلاب</a>
       <a href="#contact">تواصل معنا</a>
     </nav>
     <div class="nav-cta">
@@ -384,10 +377,12 @@
   </div>
   <div class="mobile-menu" id="mmenu">
     <a href="#programs">البرامج</a>
+    <a href="#tracks">المسارات التخصصية</a>
     <a href="#ages">الفئات العمرية</a>
     <a href="#pricing">الأسعار والباقات</a>
     <a href="#b2b">للمؤسسات</a>
-    <a href="#faq">الأسئلة الشائعة</a>
+    <a href="lessons.html">الدروس</a>
+    <a href="students.html">صفحة الطلاب</a>
     <a href="#contact">تواصل معنا</a>
   </div>
 </header>
@@ -396,12 +391,13 @@
 <section class="hero">
   <div class="container hero-grid">
     <div>
-      <span class="eyebrow">🚀 قاعة أوفلاين جديدة في كفر الدوار — الأماكن محدودة</span>
+      <span class="eyebrow">🚀 قاعات حضورية في كفر الدوار والإسكندرية — الأماكن محدودة</span>
       <h1>نصنع جيل المستقبل في <span class="grad-text">البرمجة والذكاء الاصطناعي</span></h1>
-      <p class="lead">منصة تعليمية عربية متخصصة لتعليم البرمجة والذكاء الاصطناعي والمهارات الرقمية للأطفال والشباب من 6 إلى 16 سنة، أونلاين أو حضوريًا، بمسار تعليمي واضح من أول خطوة لحد التخصص.</p>
+      <p class="lead">منصة تعليمية عربية متخصصة لتعليم البرمجة والذكاء الاصطناعي والمهارات الرقمية للأطفال والشباب، من أول خطوة في مرحلة الابتدائي لحد التخصص الجامعي، أونلاين من أي مكان أو حضوريًا في فروعنا بكفر الدوار والإسكندرية.</p>
       <div class="hero-badges">
         <span class="pill">💻 أونلاين من أي مكان</span>
-        <span class="pill">📍 حضوري بمجموعات صغيرة</span>
+        <span class="pill">📍 كفر الدوار والإسكندرية</span>
+        <span class="pill">🤖 ذكاء اصطناعي في كل مرحلة</span>
         <span class="pill green">خصم يصل حتى 70%</span>
       </div>
       <div class="hero-actions">
@@ -441,34 +437,34 @@
 <section class="section-pad section-alt" id="ages">
   <div class="container">
     <div class="sec-head">
-      <span class="eyebrow">لكل عمر مساره الصحيح</span>
-      <h2>مسارات مصممة حسب <span class="grad-text">المرحلة العمرية</span></h2>
-      <p>من أول تعامل مع الكمبيوتر لحد بناء مشاريع برمجية حقيقية، كل فئة عمرية ليها أسلوب تعليم يناسبها.</p>
+      <span class="eyebrow">مسار الطالب — رحلة واحدة متصلة</span>
+      <h2>من الابتدائي لحد الجامعة <span class="grad-text">في مسار واحد</span></h2>
+      <p>مش أربع مسارات منفصلة — دي مرحلة واحدة متصلة، كل مرحلة فيها بتجهّز الطالب للمرحلة اللي بعدها. وده هو المسار اللي بنقدمه كشراكة للمدارس والمؤسسات التعليمية.</p>
     </div>
     <div class="ages-grid">
       <div class="age-card">
         <div class="age-icon">🧩</div>
-        <h3>KIDS</h3>
-        <div class="age-range">4 - 6 سنوات</div>
-        <p>تأسيس منطقي وألعاب تفكير قبل البرمجة الحقيقية</p>
+        <h3>الابتدائية</h3>
+        <div class="age-range">6 - 11 سنة</div>
+        <p>تأسيس منطقي، Scratch، وألعاب تفكير قبل البرمجة الحقيقية</p>
       </div>
       <div class="age-card">
         <div class="age-icon">🎮</div>
-        <h3>JUNIORS</h3>
-        <div class="age-range">7 - 12 سنة</div>
-        <p>Scratch، أساسيات الذكاء الاصطناعي، واستخدام الكمبيوتر بذكاء</p>
+        <h3>الإعدادية</h3>
+        <div class="age-range">11 - 14 سنة</div>
+        <p>أساسيات الذكاء الاصطناعي، استخدام الكمبيوتر بذكاء، وأول خطوة في Python</p>
       </div>
       <div class="age-card">
         <div class="age-icon">💻</div>
-        <h3>TEENS</h3>
-        <div class="age-range">13 - 18 سنة</div>
-        <p>Python، خوارزميات، هياكل بيانات، ومسارات تخصص</p>
+        <h3>الثانوية</h3>
+        <div class="age-range">14 - 18 سنة</div>
+        <p>Python، خوارزميات، وتأسيس حقيقي يجهّز الطالب لدخول المرحلة الجامعية</p>
       </div>
       <div class="age-card">
         <div class="age-icon">🎓</div>
-        <h3>UNIVERSITY</h3>
-        <div class="age-range">18 - 25 سنة</div>
-        <p>Web Development، تحليل بيانات، وتجهيز حقيقي لسوق العمل</p>
+        <h3>الجامعية</h3>
+        <div class="age-range">18+ سنة</div>
+        <p>تخصص كامل: Web Development، تحليل بيانات، أو ذكاء اصطناعي، وتجهيز لسوق العمل</p>
       </div>
     </div>
   </div>
@@ -519,6 +515,52 @@
         </div>
         <div class="path-age">13 - 16 سنة</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SPECIALIZED TRACKS ===== -->
+<section class="section-pad section-alt" id="tracks">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">مش مرتبطة بالسن</span>
+      <h2>مسارات تخصصية <span class="grad-text">للأفراد والشركات</span></h2>
+      <p>بجانب مسار الطالب، بنقدّم دورات ومسارات تدريبية منفصلة لأي حد عايز يبني مهارة معينة — سواء موظف، خريج، أو شركة عايزة تدرّب فريقها.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="ic">🌐</div>
+        <h3>Full-Stack Python</h3>
+        <p>بناء تطبيقات ويب متكاملة من الصفر: Back-End، قواعد بيانات، Front-End، وGit/GitHub.</p>
+      </div>
+      <div class="why-card">
+        <div class="ic">🗄️</div>
+        <h3>قواعد البيانات</h3>
+        <p>SQL من الأساسيات للمتقدم، MongoDB، وFirebase لإدارة وتخزين البيانات باحتراف.</p>
+      </div>
+      <div class="why-card">
+        <div class="ic">📊</div>
+        <h3>تحليل البيانات</h3>
+        <p>Python ومكتباته (NumPy, Pandas)، تمثيل بياني (Matplotlib, Seaborn)، تحليل استكشافي (EDA)، وصولًا لـ Power BI.</p>
+      </div>
+      <div class="why-card">
+        <div class="ic">📈</div>
+        <h3>ذكاء الأعمال (BI)</h3>
+        <p>أدوات Power BI وTableau لتحويل البيانات لتقارير وDashboards تدعم قرارات الأعمال.</p>
+      </div>
+      <div class="why-card">
+        <div class="ic">🧠</div>
+        <h3>علم البيانات والذكاء الاصطناعي</h3>
+        <p>من تحليل ومعالجة البيانات إلى بناء نماذج Machine Learning وتقييمها.</p>
+      </div>
+      <div class="why-card">
+        <div class="ic">🎨</div>
+        <h3>UX/UI</h3>
+        <p>بحث المستخدم، تصميم النماذج الأولية على Figma، ومشروع تطبيقي كامل يتنشر على Behance.</p>
+      </div>
+    </div>
+    <div style="margin-top:26px; text-align:center;">
+      <a href="https://wa.me/201018497192" target="_blank" class="btn btn-primary">اسأل عن المسار المناسب لشركتك</a>
     </div>
   </div>
 </section>
@@ -577,7 +619,7 @@
         <span class="tag">📍 حضوري</span>
         <h3>تجربة تعليمية تفاعلية في قاعة كودي</h3>
         <ul>
-          <li>قاعة أوفلاين في كفر الدوار</li>
+          <li>قاعتين أوفلاين: كفر الدوار والإسكندرية</li>
           <li>مجموعات صغيرة جدًا لضمان الاهتمام الحقيقي</li>
           <li>تفاعل مباشر مع المدرب ومع أطفال تانيين</li>
           <li>بيئة تعليمية محفزة وممتعة</li>
@@ -647,10 +689,11 @@
       <div>
         <span class="eyebrow">شراكات B2B</span>
         <h2 style="font-size:30px;">نتعامل مع <span class="grad-text">المؤسسات والمدارس</span> </h2>
-        <p style="margin-top:14px; color:var(--muted); font-weight:600;">مش بس الأفراد — كودي أكاديمي بتقدم برامج وشراكات جاهزة للمدارس والجامعات والمعاهد.</p>
+        <p style="margin-top:14px; color:var(--muted); font-weight:600;">مسار الطالب الموحّد (من الابتدائي للجامعي) هو اللي بنقدمه كشراكة جاهزة للمدارس والجامعات والمعاهد، بجانب المسارات التخصصية للشركات اللي عايزة تدرّب موظفينها.</p>
         <ul class="b2b-list">
           <li>برزنتيشن لأولياء الأمور يشرح أهمية تعليم البرمجة وليه كودي تحديدًا</li>
-          <li>مناهج برمجة معتمدة تتدمج كنشاط أو حصة إضافية داخل المدرسة</li>
+          <li>مسار الطالب الموحّد يتدمج كنشاط أو حصة إضافية داخل المدرسة</li>
+          <li>مسارات تخصصية (Data، BI، Full-Stack) لتدريب الشركات والمؤسسات</li>
           <li>معسكرات صيفية وورش عمل مكثفة</li>
           <li>تقارير دورية لإدارة المدرسة عن أداء الطلاب</li>
         </ul>
@@ -678,7 +721,7 @@
     <div class="faq">
       <div class="faq-item">
         <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">هل الكورسات أونلاين ولا حضوري؟ <span class="arrow">▾</span></div>
-        <div class="faq-a"><p>الاتنين متاحين. عندنا قاعة حضورية في كفر الدوار، وبرضه إمكانية التعلم أونلاين من أي مكان لمن هم خارج المنطقة.</p></div>
+        <div class="faq-a"><p>الاتنين متاحين. عندنا قاعتين حضوريتين في كفر الدوار والإسكندرية، وبرضه إمكانية التعلم أونلاين من أي مكان لمن هم خارج المنطقتين.</p></div>
       </div>
       <div class="faq-item">
         <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">إزاي بيتحدد مستوى الطالب؟ <span class="arrow">▾</span></div>
@@ -715,7 +758,11 @@
         </a>
         <div class="cmethod loc">
           <span class="ic">📍</span>
-          كفر الدوار، مصر
+          كفر الدوار
+        </div>
+        <div class="cmethod loc">
+          <span class="ic">📍</span>
+          الإسكندرية
         </div>
       </div>
     </div>
@@ -725,16 +772,15 @@
 <footer>
   <div class="container">
     <div class="footer-grid">
-      <div class="logo">
-        <div class="logo-icon">
-          <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="8" width="16" height="12" rx="4" fill="white"/><rect x="9" y="12" width="2.4" height="2.4" rx="1" fill="#2563EB"/><rect x="12.6" y="12" width="2.4" height="2.4" rx="1" fill="#2563EB"/><rect x="10.7" y="3" width="2.6" height="5" rx="1.3" fill="white"/><circle cx="12" cy="3" r="1.6" fill="#22C55E"/></svg>
-        </div>
-        <div class="logo-name">KODY <span>ACADEMY</span></div>
-      </div>
+      <a class="logo" href="index.html">
+        <img src="assets/logo.png" alt="KODY Academy">
+      </a>
       <div class="footer-links">
         <a href="#programs">البرامج</a>
+        <a href="#tracks">المسارات التخصصية</a>
         <a href="#pricing">الأسعار</a>
         <a href="#b2b">للمؤسسات</a>
+        <a href="students.html">صفحة الطلاب</a>
         <a href="#contact">تواصل معنا</a>
       </div>
     </div>
@@ -744,3 +790,4 @@
 
 </body>
 </html>
+
